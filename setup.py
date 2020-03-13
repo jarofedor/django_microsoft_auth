@@ -52,7 +52,6 @@ setup(
     url="https://github.com/AngellusMortis/django_microsoft_auth",
     packages=find_packages(include=["microsoft_auth", "microsoft_auth.*"]),
     include_package_data=True,
-    install_requires=requirements["requirements"],
     license="MIT license",
     zip_safe=False,
     keywords="django_microsoft_auth",
@@ -71,7 +70,5 @@ setup(
         "Framework :: Django :: 2.1",
     ],
     test_suite="tests",
-    tests_require=requirements["test"],
-    setup_requires=requirements["setup"],
-    extras_require={},
+    setup_requires="pytest-runner",
 )
