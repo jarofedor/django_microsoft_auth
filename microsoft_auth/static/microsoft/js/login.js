@@ -110,7 +110,7 @@
                             loginContainer.firstChild);
                     } else {
                         // redirect to next URL if it was provided
-                        let new_path = this.parseGETParam('next') || '/admin';
+                        let new_path = this.parseGETParam('next') || '/';
 
                         window.location = origin + new_path;
                     }
